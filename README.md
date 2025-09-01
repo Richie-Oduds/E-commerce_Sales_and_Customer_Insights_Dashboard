@@ -1,5 +1,10 @@
 # E-commerce_Sales_and_Customer_Insights_Dashboard
-E-commerce Sales &amp; Customer Insights Dashboard – SQL-based project analyzing sales and customer data. Showing key insights: on the product category with the most revenue, Highest Spending Customers &amp; Regions, Customer Category Based on their Purchasing Power (Customer Segmentation).
+SQL-based project analyzing e-commerce sales and customer data to uncover actionable insights. The analysis identifies top-selling product categories, high-spending customers and regions, and segments customers by purchasing power (High, Medium, and Low Value).
+
+## Project Questions:
+- Which product categories generate the most revenue?
+- Who are the highest-spending customers and which regions manage them?
+- How can customers be segmented based on purchasing power?
 
 ## Project Questions and Insights
 
