@@ -5,9 +5,9 @@ E-commerce Sales &amp; Customer Insights Dashboard – SQL-based project analyzi
 
 ### Top-Selling Categories
 
-From the insight Accessories  and Clothing are highlighted as key categories due to the large amount of revenue generated from there.
-Accessories products dominate in sales volume (higher quantities ordered), making it the strongest revenue driver.
-Clothing and Sports products also contributed significantly.
+* From the insight Accessories  and Clothing are highlighted as key categories due to the large amount of revenue generated from there.
+* Accessories products dominate in sales volume (higher quantities ordered), making it the strongest revenue driver.
+* Clothing and Sports products also contributed significantly.
 
 ### High-Spending Customers & Regions
 
@@ -17,3 +17,4 @@ Insight: The East Region consistently handles higher-value customers — pointin
 ### Customer Category Based on their Purchasing Power (Customer Segmentation)
  
  I grouped customers into different categories to differentiate between the High Value Customers, the Medium Value  Customers and the Low Value Customers for the company to carry out various discount plans and subscription plans  for customers. I noticed we had more high value customers at our company.
+ 
