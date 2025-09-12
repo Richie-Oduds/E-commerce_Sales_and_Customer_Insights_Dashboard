@@ -17,23 +17,23 @@ I have been hired as a Data Analyst for MegaMart Online, a global e-commerce pla
 
 ## Project Questions and Insights
 
-## Top-Selling Categories
+### 1. Top-Selling Categories
 
 Analysis shows that Accessories and Clothing stand out as the key categories due to the large amount of revenue generated.
 * Accessories dominate in terms of sales volume, making them the strongest revenue driver.
 * Clothing and Sports products also contributed significantly, reinforcing their importance in overall sales performance.
   
-## Using INNER JOIN to Find Top-Grossing Products
+### 2. Using INNER JOIN to Find Top-Grossing Products
 
 I applied an INNER JOIN to connect the products table with orders, customers, and sales_reps. 
 * This allowed me to not only identify the highest-grossing products but also see which customers purchased them and which sales reps managed those customers, giving a complete view of product performance and customer reach.
   
-## High-Spending Customers & Regions
+### 3. High-Spending Customers & Regions
 
 Using the CASE STATEMENT, I was able to identify the top-spending customers and the regions that manage them.
 * Insight: The East Region consistently handles higher-value customers according to the top 5 high value customers in our company, suggesting either stronger customer relationships or greater purchasing power in that region.
 
-## Customer Segmentation (Based on Purchasing Power)
+### Customer Segmentation (Based on Purchasing Power)
   
 I categorized customers into three groups, which are the High Value, Medium Value, and Low Value,  based on their total spending.
 * This segmentation allows the company to design targeted strategies such as discounts, loyalty rewards, or subscription plans for different customer groups.
