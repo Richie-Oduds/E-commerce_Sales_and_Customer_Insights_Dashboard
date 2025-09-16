@@ -1,9 +1,9 @@
-# INSIGHTS FROM MY PROJECT ANALYSIS
+\# INSIGHTS FROM MY PROJECT ANALYSIS
 
-### Top-Selling Categories
+\### Top-Selling Categories
 Analysis shows that Accessories and Clothing stand out as the key categories due to the large amount of revenue generated.
-* Accessories dominate in terms of sales volume, making them the strongest revenue driver.
-* Clothing and Sports products also contributed significantly, reinforcing their importance in overall sales performance.
+\* Accessories dominate in terms of sales volume, making them the strongest revenue driver.
+\* Clothing and Sports products also contributed significantly, reinforcing their importance in overall sales performance.
 
 ### Using INNER JOIN to Find Top-Grossing Products
 I applied an INNER JOIN to connect the products table with orders, customers, and sales_reps. 
