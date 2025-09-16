@@ -98,6 +98,23 @@ WHERE
 ORDER BY 
        o.quantity DESC;
 
+/*Show customers whose sales reps are NOT assigned to the "North Region".*/
+SELECT 
+	s.sales_rep_id, 
+	s.rep_name, s.region, 
+	c.customer_id, 
+	c.first_name, 
+	c.last_name
+FROM 
+	sales_reps s
+JOIN 
+	customers c
+ON 
+	s.sales_rep_id = c.sales_rep_id
+WHERE 
+	s.region NOT IN ('North Region')
+ORDER BY 
+	c.customer_id;
 
 
 
