@@ -117,6 +117,88 @@ WHERE
 ORDER BY 
 	c.customer_id;
 
+/* DATE_PART: Count how many orders were placed in each month of 2024. */
+
+SELECT 
+	DATE_PART('month', order_date) AS months, 
+	COUNT(*) AS order_count
+FROM 
+	orders
+GROUP BY 
+	   1
+ORDER BY 
+	order_count DESC;
+
+/* DATE_TRUNC: Calculate total revenue for each quarter in 2024.*/
+
+SELECT 
+     DATE_TRUNC('quarter', order_date) AS rev_quater, 
+	 SUM(total_amount) AS total_revenue
+FROM 
+    orders 
+WHERE 
+    DATE_TRUNC('quarter', order_date) BETWEEN '2024-01-01' AND '2024-12-31'
+GROUP BY 
+       1
+ORDER BY 
+      total_revenue DESC;
+
+/* Create a column spending_category to classify customers based on their total spending: */
+
+SELECT 
+	c.customer_id, 
+	c.first_name, 
+	c.last_name, 
+	SUM(o.total_amount) total_spent, 
+       CASE 
+	        WHEN SUM(o.total_amount) > 1000 THEN 'High Value'
+	        WHEN SUM(o.total_amount) BETWEEN 500 AND 1000 THEN 'Medium Value'
+			ELSE 'Low Value' END AS spending_category
+FROM 
+	orders o
+JOIN 
+	customers c
+ON 
+	o.customer_id = c.customer_id
+GROUP BY 
+	c.customer_id, 
+	c.first_name, 
+	c.last_name
+ORDER BY 
+	total_spent DESC;
+			
+/* Find all customers whose total spending is above the average spending of all customers. */
+
+SELECT 
+     c.customer_id, 
+	 c.first_name, 
+	 c.last_name, 
+	 SUM(o.total_amount) AS total_spent
+FROM 
+    orders o
+JOIN 
+    customers c
+ON 
+  o.customer_id = c.customer_id
+GROUP BY 
+      c.customer_id, 
+	  c.first_name, 
+	  c.last_name
+HAVING 
+     SUM(o.total_amount) > (SELECT 
+	                            AVG(total_spent)
+                            FROM (
+                                    SELECT 
+								         customer_id, 
+								         SUM(total_amount) AS total_spent
+                                     FROM 
+									     orders
+                                     GROUP BY 
+								           customer_id
+	                              ) sub
+						)  
+ORDER BY 
+      total_spent DESC;
 
 
 
