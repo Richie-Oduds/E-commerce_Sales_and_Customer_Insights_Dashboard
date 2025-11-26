@@ -1,4 +1,4 @@
-# E-commerce_Sales_and_Customer_Insights_Dashboard
+# E-commerce_Sales_and_Customer_Insights
 SQL-based project analyzing e-commerce sales and customer data to uncover actionable insights. The analysis identifies top-selling product categories, high-spending customers and regions, and segments customers by purchasing power (High, Medium, and Low Value).
 
 ## What was the Scenario of the project?
